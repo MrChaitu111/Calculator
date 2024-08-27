@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif ;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+  background-color: #111518;
+}
+#button-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+  background-color: #222327;
+  width: 330px;
+}
+#display-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  width: 330px;
+  padding: 25px;
+  border-radius: 15px 15px 0 0;
+  background-color: #222327;
+  position: relative;
+}
+#display, #result{
+padding: 5px 0 0 10px;
+text-align: right;
+}
+#display{
+  font-size: 20px;
+  border-radius: 3px 3px 0 0 ;
+  color:#555;
+}
+#result{
+  color: #fff;
+  font-size: 42px;
+  border-radius: 0 0 3px 3px;
+}
+.dots{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left:24px;
+  top:24px;
+.dot{
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 8px;
+  &:nth-child(1){
+    background-color: #e75e4e;
+  }
+  &:nth-child(2){
+    background-color: #ebd454;
+  }
+  &:nth-child(3){
+    background-color: #28c840;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+}
+}
+.button{
+cursor: pointer;
+font-size: 30px;
+height: 60px;
+width: 60px;
+margin: 5px;
+border:none;
+border-radius: 3px;
+color:#fff;
+font-weight: bolder;
+align-items: center;
+display: flex;
+justify-content: center;
+background-color: transparent; 
+}
+#equals, #add, #subtract, #multiply, #divide, #clear{
+  color: #fff;
+  font-weight: normal;
+  border-radius: 30px;
+  background-color: #333;
+}
+#zero{
+  grid-column: 2;
+  grid-row:5;
+  border-radius: 50%;
+  background-color:#333;
+}
+#dubzero{
+  grid-column: 1;
+  grid-row:5;
+  border-radius: 50%;
+  background-color:#333;
+}
+#decimal{
+  grid-column: 3;
+  grid-row:5;
+  border-radius: 50%;
+  background-color:#333;
+}
+#equals{
+  grid-column: 4;
+  grid-row: 3/7;
+  height: auto;
+  background-color:#ff1585;
+}
+#equals:hover{
+ background-color: #eb7f3c;
+}
+#one{
+  grid-column: 1;
+  grid-row: 4;
+  border-radius: 50%;
+  background-color:#333;
+}
+#two{
+  grid-column: 2;
+  grid-row: 4;
+  border-radius: 50%;
+  background-color:#333;
+}
+#three{
+  grid-column: 3;
+  grid-row: 4;
+  border-radius: 50%;
+  background-color:#333;
+}
+#four{
+  grid-column: 1;
+  grid-row: 3;
+  border-radius: 50%;
+  background-color:#333;
+}
+#five{
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 50%;
+  background-color:#333;
+}
+#six{
+  grid-column: 3;
+  grid-row: 3;
+  border-radius: 50%;
+  background-color:#333;
+}
+#seven{
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 50%;
+  background-color:#333;
+}
+#eight{
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 50%;
+  background-color:#333;
+}
+#nine{
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 50%;
+  background-color:#333;
+}
+#add{
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #ff1585;
+  color: #fff;
+}
+#subtract{
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #ff1585;
+  color: #fff;
+}
+#multiply{
+  grid-column: 4;
+  grid-row: 1;
+  background-color: #ff1585;
+  color: #fff;
+}
+#divide{
+  grid-column: 4;
+  grid-row: 2;
+  background-color: #ff1585;
+  color: #fff;
+}
+#clear{
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 24px;
+  background-color: #ff1585;
+  color: #fff;
+}
+
+.sets{
+  background-color: #111518;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+gap: 5;
+flex-wrap: wrap;
+}
+.homep{
+  margin-left: 220px;
+  color:#fff;
+
+}
+.setts{
+  color:#fff;
+  
+}
+
+
+
